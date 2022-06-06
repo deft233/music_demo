@@ -1,0 +1,57 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/other/other",
+        "pages/search/search",
+        "pages/video/video",
+        "pages/personal/personal",
+        "pages/login/login"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#d43c33",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "监狱云音乐"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "tabBar": {
+        "selectedColor": "#d43c33",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "/static/images/tabs/tab-home.png",
+                "selectedIconPath": "/static/images/tabs/tab-home-current.png"
+            },
+            {
+                "pagePath": "pages/video/video",
+                "text": "视频页面",
+                "iconPath": "/static/images/tabs/select.png",
+                "selectedIconPath": "/static/images/tabs/selected.png"
+            },
+            {
+                "pagePath": "pages/personal/personal",
+                "text": "个人中心",
+                "iconPath": "/static/images/tabs/tab-my.png",
+                "selectedIconPath": "/static/images/tabs/tab-my-current.png"
+            }
+        ]
+    },
+    "requiredBackgroundModes": [
+        "audio"
+    ],
+    "subPackages": [
+        {
+            "root": "packageA",
+            "pages": [
+              "pages/recommendSong/recommendSong",
+              "pages/songDetail/songDetail"
+            ]
+          }
+    ],
+    "preloadRule": {
+        "pages/index/index":{
+            "packages": ["packageA"]
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<!--components/NavHeader/NavHeader.wxml-->
+<view class="recommendContain">
+        <view class="header">
+            <text class="title">{{title}}</text>
+            <view>
+                <text >{{navText}}</text>
+                <text class="more">更多</text>
+            </view>
+        </view>
+    </view>

@@ -1,0 +1,56 @@
+/* pages/login/login.wxss */
+.left-top-sign{
+    font-size: 120rpx;
+    color: #f8f8f8;
+    position:relative;
+    left: 0rpx;
+  }
+.topTitle {
+    position: relative;
+    left: 50rpx;
+    top: -90rpx;
+    font-size: 46rpx;
+    color: #555;
+}
+.formContain {
+    padding: 20rpx 50rpx;
+}
+.formItem {
+    border-radius: 20rpx;
+    background-color: #f8f6fc;
+    margin-bottom: 20rpx;
+    padding: 10rpx;
+    font-size: 28rpx;
+}
+.formItem input {
+    height: 60rpx;
+   
+}
+.confirmLogin {
+    width: 630rpx !important;
+    background-color: #d43c33;
+    color: #fff;
+    border-radius: 40rpx;
+    margin-top: 70rpx;
+}
+.forgetPwd {
+    color: #4399fc;
+    text-align: center;
+    font-size: 28rpx;
+    margin-top: 40rpx;
+    margin-right: -15rpx;
+}
+.registerSection {
+    text-align: center;
+    font-size: 28rpx;
+    color: #606266;
+    position: absolute;
+    bottom: 50rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.registerSection text {
+    color: #4399fc;
+    /* margin-left: 10rpx; */
+}
+  

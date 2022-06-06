@@ -1,0 +1,119 @@
+/* pages/songDetail/songDetail.wxss */
+.songDetailContainer {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.circle{
+     width: 60rpx;
+     height: 60rpx;
+    background: #fff;
+     border-radius: 50%;
+     margin-top: 20rpx;
+     position: relative;
+     z-index: 100;
+}
+.needle {
+    width: 200rpx;
+    height: 250rpx;
+    position: relative;
+    top: -30rpx;
+    right: -60rpx;
+    /* border: 1px solid red; */
+    z-index: 99;
+    transform-origin: 30rpx 0;
+    transform: rotate(-20deg);
+    transition: transform 1s;
+}
+.needleRotate {
+    transform: rotate(0deg);
+}
+.discContainer{
+    width: 598rpx;
+    height: 598rpx;
+    position: relative;
+    top: -150rpx;
+   
+}
+.discRotate {
+    animation: dh 3s linear 1s infinite;
+}
+@keyframes dh {
+    from  {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.discContainer .disc {
+    height: 100%;
+    width: 100%;
+}
+.discContainer .imgContainer {
+    position: absolute;
+    height: 370rpx;
+    width: 370rpx;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+/* 进度条控制区域 */
+.nprogressControll{
+    position: relative;
+    top: -40rpx;
+    display: flex;
+    /* border: 1px solid red; */
+    /* padding-bottom: 20rpx; */
+}
+.nprogress {
+    position: relative;
+    width: 420rpx;
+    height: 4rpx;
+    margin: auto;
+    background-color:rgba(0,0,0,.4);
+}
+.nprogressPlaying {
+    position: absolute;
+    /* width: 100rpx; */
+    height: 4rpx;
+    margin: auto;
+    z-index: 1;
+    background: red;
+}
+.circlePlaying {
+    position: absolute;
+    width: 10rpx;
+    height: 10rpx;
+    border-radius: 50%;
+    background-color: #fff;
+    top: -3rpx;
+    right: -10rpx;
+}
+.nprogressControll text {
+    padding: 0 20rpx;
+}
+/* 底部控制区域 */
+.footControllContainer {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #eee;
+    padding-top: 40rpx;
+    /* flex: 1; */
+}
+.footControllContainer text {
+    flex: 1;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    font-size: 40rpx;
+    /* border-radius: 50%; */
+}
+.footControllContainer .big {
+    font-size: 80rpx;
+}

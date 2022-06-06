@@ -1,0 +1,37 @@
+<!--pages/songDetail/songDetail.wxml-->
+<view class="songDetailContainer">
+    <!-- 演唱者 -->
+    <text class="artist">{{songDetailList[0].ar[0].name}}</text>
+    <!-- 摇杆 -->
+    <view class="circle"></view>
+    <image class="needle {{isPlay?'needleRotate':''}}" src="/static/images/song/needle.png"></image>
+    <view class="discContainer {{isPlay?'discRotate':''}}">
+        <image class="disc" src="/static/images/song/disc.png"></image>
+        <image class="imgContainer" src="{{songDetailList[0].al.picUrl}}"></image>
+    </view>
+    <!-- 进度条区域 -->
+    <view class="nprogressControll">
+        <text class="start">{{stime}}</text>
+        <!-- 中间进度条 -->
+        <view class="nprogress">
+            <!-- 正在播放的进度条 -->
+            <view class="nprogressPlaying" style="width: {{currentLength+'rpx'}};">
+                <!-- 正在播放的小圆点 -->
+                <view class="circlePlaying"></view>
+            </view>
+        </view>
+        <text class="end">{{dtime}}</text>
+    </view>
+    <!-- 底部控制区域 -->
+    <view class="footControllContainer">
+        <text class="iconfont icon-iconsMusicyemianbofangmoshiShuffle"></text>
+
+        <text class="iconfont icon-shangyishou" id="pre" bindtap="handleSwitch"></text>
+
+        <text class="iconfont {{isPlay?'icon-zanting':'icon-bofang'}} big" bindtap="handleMusicPlay"></text>
+
+        <text class="iconfont icon-next" id="next" bindtap="handleSwitch"></text>
+
+        <text class="iconfont icon-iconsMusicyemianbofangmoshiPlayList"></text>
+    </view>
+</view>

@@ -1,0 +1,114 @@
+/* pages/search/search.wxss */
+.musicSearchContainer{
+    padding: 0 20rpx;
+}
+/* 头部搜索框样式 */
+.searchHeader {
+    position: relative;
+    display: flex;
+    padding: 10rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+}
+.searchHeader input {
+    flex:1;
+    border-radius: 20rpx;
+    /* border: 1rpx solid red; */
+    padding-left: 20rpx;
+    /* line-height: 60rpx; */
+    height: 60rpx;
+    line-height: 60rpx;
+}
+.deleteInputValue{
+    color: rgba(180,180,180);
+    position: absolute;
+    right: 150rpx;
+    z-index: 10;
+}
+.placeholder {
+    color: rgba(200,200,200);
+}
+.searchIcon {
+    padding-left: 10rpx;
+}
+.cancel{
+    width: 100rpx;
+    text-align: center;
+    font-size: 36rpx;
+}
+/* 热搜榜样式 */
+.hotContainer{
+    margin-top: 50rpx;
+}
+.hotText{
+    
+    height: 80rpx;
+    /* line-height: 80rpx; */
+    border-bottom: 1px solid rgba(200,200,200);
+}
+.hotList{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hotListItem{
+    width: 50%;
+    height: 80rpx;
+    line-height: 80rpx;
+}
+.order{
+    padding-right: 10rpx;
+}
+.iconImg{
+    width: 35rpx;
+    height: 20rpx;
+    margin-left: 10rpx;
+}
+/* 搜索展示数据页面 */
+.searchDataKeyword{
+    color: #d43c33;
+    font-size: 30rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 2rpx solid #d43c33;
+}
+
+.searchDataItem{
+    padding: 10rpx 0rpx;
+    display: flex;
+    height: 60rpx;
+    line-height: 60rpx;
+}
+.content{
+    flex:1;
+    padding-left: 10rpx;
+    font-size: 28rpx;
+    border-bottom: 2rpx solid rgba(240,240,240);
+}
+/* 历史记录 */
+.history {
+    position: relative;
+    /* height: 60rpx; */
+    line-height: 60rpx;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-bottom: 100rpx; */
+}
+.text {
+    height: 60rpx;
+    color: grey;
+    font-size: 30rpx;
+    margin: 10rpx;
+}
+.historycontent {
+    height: 60rpx;
+    font-size: 28rpx;
+    background: #ededed;
+    padding: 0 10rpx;
+    margin: 10rpx;
+    border-radius: 20rpx;
+}
+.delete {
+    position: absolute;
+    bottom: 10rpx;
+    right: 15rpx;
+}

@@ -1,0 +1,5 @@
+/* pages/other/other.wxss */
+@import '/template/myTmp/myTmp.wxss';
+.mytitle {
+    color: red;
+}

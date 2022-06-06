@@ -1,0 +1,9 @@
+<!--pages/other/other.wxml-->
+<import src="/template/myTmp/myTmp"></import>
+<view class="otherContainer">
+    <view class="mytitle">我的模板标题</view>
+    <template is="myTmp" data="{{...userInfo}}"></template>
+    
+    <view>获取登录凭证</view>
+    <button bindtap="handleGetOpenId">获取openID</button>
+</view>
